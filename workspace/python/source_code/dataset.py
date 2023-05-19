@@ -22,7 +22,8 @@
 import gdown
 import os
 
-## FCN Dataset 
+## FCN Dataset
+'''
 url = 'https://drive.google.com/uc?id=1mSN6eLqPYEo9d9pBjSGzQ-ocLd8itP0P&export=download'
 output = str(os.path.realpath(os.path.dirname(__file__)))+ '/fourcastnet/dataset.zip'
 gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
@@ -33,13 +34,14 @@ url = 'https://drive.google.com/uc?id=1oSkK69LGP3DfU2tlH5iaejOh94VNsMDu&export=d
 output = str(os.path.realpath(os.path.dirname(__file__)))+ '/../jupyter_notebook/FourCastNet/pre_trained.zip' 
 gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
 os.remove(output)
-
+'''
 ## NS Data
 url = 'https://drive.google.com/uc?id=1IXEGbM3NOO6Dig1sxG1stHubwb09-D2N&export=download'
 output = str(os.path.realpath(os.path.dirname(__file__)))+ '/navier_stokes/dataset.zip'
 gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
 os.remove(output)
 
+'''
 ## FCN for Omniverse-P1
 url = 'https://drive.google.com/uc?id=16YqSnstqoSJdgBzerbzYIkYagwS12lK3&export=download'
 output = str(os.path.realpath(os.path.dirname(__file__)))+ '/FCN.zip'
@@ -59,3 +61,4 @@ url = 'https://drive.google.com/uc?id=1DugS2IbHhBPyCE-EuZczLHBZnlnFViIm&export=d
 output = str(os.path.realpath(os.path.dirname(__file__)))+'/ov.zip'
 gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
 os.remove(output)
+'''
